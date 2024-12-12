@@ -1,0 +1,4 @@
+http_port: 8899
+environment : ""
+logger_level : "debug"
+logger_output_path : "./loggerOut"

@@ -72,3 +72,55 @@ IoTGo-Services/
 ├── main.go              # Uygulamanın giriş noktası
 └── config/              # Konfigürasyon dosyaları
     └── config.go        # Uygulama ayarları
+```
+
+# Simüle Edilebilecek Akıllı Cihazlar ve İşlevleri
+
+## Akıllı Kamera
+- Hareket algılama (ör. eve birisi yaklaştığında bildirim gönderme).
+- Canlı yayın ve kayıt (ör. güvenlik amacıyla).
+- Gece görüş modu (ör. düşük ışıkta görüntü sağlama).
+- Yüz tanıma (ör. izinli kişilerle yabancıları ayırt etme).
+
+## Akıllı Işık
+- Açma/Kapama (ör. uzaktan kontrol veya belirli saatlerde).
+- Renk değiştirme (ör. ortam ışığını ayarlama).
+- Parlaklık ayarı (ör. enerji tasarrufu veya ambiyans oluşturma).
+- Hareket sensörü (ör. birisi odaya girince ışığı otomatik açma).
+
+## Akıllı Termostat
+- Sıcaklık kontrolü (ör. odanın sıcaklığını sabit tutma).
+- Zamanlama (ör. belirli saatlerde ısıtma/soğutma).
+- Enerji verimliliği raporları (ör. ne kadar enerji harcandığını gösterme).
+- Uzaktan kontrol (ör. dışarıdayken sıcaklık ayarı yapma).
+
+## Akıllı Priz
+- Açma/Kapama kontrolü (ör. bağlı cihazları uzaktan açma/kapatma).
+- Enerji tüketimi ölçümü (ör. hangi cihaz ne kadar enerji harcıyor).
+- Zamanlayıcı (ör. belirli cihazların belirli saatlerde çalışması).
+
+## Akıllı Kapı Kilidi
+- Uzaktan kilitleme/açma (ör. kapıyı telefonla kontrol etme).
+- Şifre veya biyometrik doğrulama (ör. parmak iziyle açma).
+- Geçmiş kayıtları (ör. kim ne zaman kapıyı açmış).
+- Ziyaretçi yönetimi (ör. geçici erişim izni verme).
+
+## Akıllı Perdeler/Jaluziler
+- Açma/Kapama (ör. uzaktan kontrol veya ışık durumuna göre otomasyon).
+- Zamanlama (ör. sabah otomatik açılma).
+- Enerji verimliliği (ör. sıcak havalarda güneş ışığını engelleme).
+
+## Akıllı Buzdolabı
+- İçerik takibi (ör. hangi ürünlerin tükenmek üzere olduğunu bildirme).
+- Enerji tüketimi optimizasyonu.
+- Sıcaklık ve nem kontrolü.
+
+
+---
+# IoT Cihaz Fabrikası - Simülasyon Sunucusu
+
+Bu sistem, simüle edilecek cihazların bir fabrika gibi üretildiği ve yönetildiği temel bir altyapı sunar. Üretilen cihazlar, benzersiz ID'ler ile tanımlanır ve bu ID'ler üzerinden IoTGO uygulamasıyla entegre şekilde çalışır.
+
+IoTGO uygulaması bu sisteme bağlanarak simüle edilen cihazların kontrolünü sağlar. Örneğin, ışık sisteminin açma, kapama ve renk değiştirme özellikleri bu sunucuda tanımlıdır. IoTGO üzerinden bu işlevlere zamanlama eklemek gerekiyorsa, sistem mevcut zaman servisi ile entegre şekilde çalışarak işlemleri gerçekleştirir.
+
+Bu yapı, cihazların temel işlevlerini merkezi bir noktada toplayarak uygulama ile daha kapsamlı bir entegrasyon sağlar.
